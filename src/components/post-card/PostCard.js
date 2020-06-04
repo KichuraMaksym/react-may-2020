@@ -1,5 +1,6 @@
 import React, { Component, PureComponent } from 'react';
-// todo 3: сделать импорт Link из react-router-dom
+// tod 3: сделать импорт Link из react-router-dom
+import {Link} from "react-router-dom";
 import { accessToken } from '../../constants';
 import { Comment } from '../comment/Comment';
 import DefaultImg from '../../assets/default-empty-img.png';
@@ -116,7 +117,6 @@ class PostCard extends PureComponent {
         {/* todo 3 : добавить ссылку Link на урлу с айди поста, где будут детали поста
                     по аналогии с 24 строкой в UserCard
         */}
-
         { showComments && !!comments.length && <label>Comments:</label> }
         { showComments && isCommentsLoading && <div>Loading...</div> }
         {
